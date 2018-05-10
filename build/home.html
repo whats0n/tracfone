@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <!-- begin header -->
+    <header class="header"> <button class="header__btn-nav" data-modal-control="modal-nav">
+		<span></span>
+	</button>
+      <div class="inner header__inner">
+        <div class="header__content"> <img src="img/wireless-logo.svg" alt="Logo" class="header__logo">
+          <h1 class="header__title">2-2-2 Retention Tool</h1>
+        </div>
+        <div class="header__meta">24 Customers to call today</div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- begin nav -->
+    <div class="nav" data-modal="modal-nav">
+      <div class="nav__overlay" data-modal-close></div>
+      <div class="nav__inner" data-modal-container> <button class="nav__header" data-modal-close>
+			
+	<svg class="icon icon-angle-left"><use xlink:href="img/sprite.svg#icon-angle-left"></use></svg>
+
+			<strong>Alpha Wireless</strong>
+			<span>Access Code: 12345</span>
+		</button>
+        <div class="nav__body">
+          <div class="user-data nav__user-data">
+            <div class="user-data__title">John Doe</div>
+            <div class="user-data__subtitle">john123</div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item"> <a href="#" class="nav__link ">
+							<span class="nav__icon">
+	<svg class="icon icon-logout-mark"><use xlink:href="img/sprite.svg#icon-logout-mark"></use></svg>
+</span>
+							<span class="nav__title">Logout</span>
+						</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end nav -->
+    <div class="main">
+      <div class="inner">
+        <!-- begin grid -->
+        <div class="grid">
+          <div class="grid__row">
+            <div class="grid__col">
+              <div class="grid__label">Mobile Number</div>
+              <div class="grid__value">123-456-7890</div>
+            </div>
+            <div class="grid__col">
+              <div class="grid__label">Brand</div>
+              <div class="grid__value">Simple Mobile</div>
+            </div>
+            <div class="grid__col">
+              <div class="grid__label">Plan Name</div>
+              <div class="grid__value">$60 unlimited</div>
+            </div>
+            <div class="grid__col">
+              <div class="grid__label">Last Payment</div>
+              <div class="grid__value">12/04/2018</div>
+            </div>
+          </div>
+        </div>
+        <!-- end grid -->
+        <!-- begin action -->
+        <div class="action">
+          <div class="action__info">
+            <div class="action__label">Action:</div>
+            <div class="action__value">2 weeks call</div>
+          </div>
+          <div class="action__container">
+            <div class="action__content">
+              <div class="action__content-in js-toggle">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ullam aperiam a quae qui eveniet, doloremque praesentium facilis fugiat molestiae accusamus laboriosam libero odio sapiente sequi ipsam repellat deleniti atque cum minima
+                  quas aut beatae perferendis voluptates. Atque doloribus perspiciatis maxime, quisquam esse! Debitis distinctio modi vel fugit accusantium perspiciatis quos nihil, culpa accusamus eveniet quo! Excepturi voluptatem minus, voluptates optio
+                  vero tenetur. Maiores odio, nostrum aliquam necessitatibus accusamus totam sit ad deserunt enim nihil tenetur dignissimos voluptates saepe modi amet temporibus sapiente, ipsum provident. Facere culpa, nesciunt possimus sunt quis excepturi
+                  atque beatae sapiente officia expedita reiciendis quo enim.</p> <a href="#" class="link-more action__link-more js-toggle-control"><span class="link-more__visible">More</span><span class="link-more__hidden">Less</span></a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- end action -->
+        <!-- begin form -->
+        <div class="form">
+          <div class="form__body">
+            <div class="form__col">
+              <div class="form__label">Result</div>
+              <div class="form__container">
+                <ul class="form__list">
+                  <li class="form__item"> <label class="radio">
+		<input type="radio" name="result-radio" class="radio__input">
+		<span class="radio__icon"></span>
+		<span class="radio__title">Call Completed</span>
+	</label> </li>
+                  <li class="form__item"> <label class="radio">
+		<input type="radio" name="result-radio" class="radio__input">
+		<span class="radio__icon"></span>
+		<span class="radio__title">Left Voice-Mail</span>
+	</label> </li>
+                  <li class="form__item"> <label class="radio">
+		<input type="radio" name="result-radio" class="radio__input">
+		<span class="radio__icon"></span>
+		<span class="radio__title">Voice mail is not available</span>
+	</label> </li>
+                  <li class="form__item"> <label class="radio">
+		<input type="radio" name="result-radio" class="radio__input">
+		<span class="radio__icon"></span>
+		<span class="radio__title">Don&#39;t Call Me Request</span>
+	</label> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="form__label">Feedback</div>
+              <div class="form__container"> <textarea class="textarea" placeholder="Notes"></textarea> </div>
+            </div>
+            <div class="form__col form__col_md-100">
+              <div class="form__container">
+                <div class="select form__select"> <span class="select__arrow"></span> <select class="select__field">
+						
+							<option value="Satisfied">Satisfied</option>
+						
+							<option value="Not satisfied">Not satisfied</option>
+						
+							<option value="Changed provider">Changed provider</option>
+						
+							<option value="Question/answer">Question/answer</option>
+						
+					</select> </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__footer"> <button class="btn form__btn" data-animation="ripple">Skip</button> <button class="btn btn_primary form__btn" data-animation="ripple">Completed</button> </div>
+        </div>
+        <!-- end form -->
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

@@ -1,0 +1,34 @@
+.btn 
+	position: relative
+	overflow: hidden
+	display: inline-block
+	vertical-align: top
+	padding: 0 30px
+	min-width: 120px
+	border: none
+	outline: none
+	color: $darkGray
+	background: #e9e9e9
+	+f(18px, 300, 50px)
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	cursor: pointer
+	transition: opacity .175s, background .175s, box-shadow .175s
+	&:disabled,
+	&.is-disabled
+		opacity: 0.7
+		cursor: not-allowed
+	&_primary
+		color: $white
+		background: $primary
+		&:active
+			color: $white
+			background: darken($primary, 10%)
+			box-shadow: inset 2px 2px 6px rgba(0,0,0,.2)
+	&_red
+		background: $red
+		&:active
+			background: darken($red, 10%)
+	&_wide
+		width: 100%

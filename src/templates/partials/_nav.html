@@ -1,0 +1,30 @@
+<!-- begin nav -->
+<div class="nav" data-modal="modal-nav">
+	<div class="nav__overlay" data-modal-close></div>
+	<div class="nav__inner" data-modal-container>
+		<button class="nav__header" data-modal-close>
+			{{mixins.icon('angle-left')}}
+			<strong>Alpha Wireless</strong>
+			<span>Access Code: 12345</span>
+		</button>
+		<div class="nav__body">
+			<div class="user-data nav__user-data">
+				<div class="user-data__title">John Doe</div>
+				<div class="user-data__subtitle">john123</div>
+			</div>
+			<ul class="nav__list">
+				{% for item in [
+					{ icon: 'logout-mark', title: 'Logout' }
+				] %}
+					<li class="nav__item">
+						<a href="#" class="nav__link {% if loop.index == navActive %}is-active{% endif %}">
+							<span class="nav__icon">{{mixins.icon(item.icon)}}</span>
+							<span class="nav__title">{{item.title}}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end nav -->

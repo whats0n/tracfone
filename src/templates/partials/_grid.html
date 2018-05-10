@@ -1,0 +1,17 @@
+<!-- begin grid -->
+<div class="grid">
+	<div class="grid__row">
+		{% for item in [
+			{ label: 'Mobile Number', value: '123-456-7890' },
+			{ label: 'Brand', value: 'Simple Mobile' },
+			{ label: 'Plan Name', value: '$60 unlimited' },
+			{ label: 'Last Payment', value: '12/04/2018' }
+		] %}
+			<div class="grid__col">
+				<div class="grid__label">{{item.label}}</div>
+				<div class="grid__value">{{item.value}}</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- end grid -->

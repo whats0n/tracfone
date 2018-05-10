@@ -1,0 +1,43 @@
+<!-- begin form -->
+<div class="form">
+	<div class="form__body">
+		<div class="form__col">
+			<div class="form__label">Result</div>
+			<div class="form__container">
+				<ul class="form__list">
+					{% for item in [
+						{ name: 'result-radio', title: 'Call Completed' },
+						{ name: 'result-radio', title: 'Left Voice-Mail' },
+						{ name: 'result-radio', title: 'Voice mail is not available' },
+						{ name: 'result-radio', title: "Don't Call Me Request" }
+					] %}
+						<li class="form__item">{{mixins.radio(item)}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="form__col">
+			<div class="form__label">Feedback</div>
+			<div class="form__container">
+				<textarea class="textarea" placeholder="Notes"></textarea>
+			</div>
+		</div>
+		<div class="form__col form__col_md-100">
+			<div class="form__container">
+				<div class="select form__select">
+					<span class="select__arrow"></span>
+					<select class="select__field">
+						{% for item in [ 'Satisfied', 'Not satisfied', 'Changed provider', 'Question/answer' ] %}
+							<option value="{{item}}">{{item}}</option>
+						{% endfor %}
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form__footer">
+		<button class="btn form__btn" data-animation="ripple">Skip</button>
+		<button class="btn btn_primary form__btn" data-animation="ripple">Completed</button>
+	</div>
+</div>
+<!-- end form -->

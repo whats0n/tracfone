@@ -1,0 +1,11 @@
+{% macro icon(i) %}
+	<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+{% endmacro %}
+
+{% macro radio(props) %}
+	<label class="radio">
+		<input type="radio" name="{{props.name}}" class="radio__input">
+		<span class="radio__icon"></span>
+		{% if props.title %}<span class="radio__title">{{props.title}}</span>{% endif %}
+	</label>
+{% endmacro %}

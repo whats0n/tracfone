@@ -1,0 +1,15 @@
+.link-more
+	display: inline-block
+	vertical-align: top
+	color: $primary
+	text-decoration: underline
+	+hover
+		text-decoration: none
+	&.is-active
+		.link-more
+			&__hidden
+				display: block
+			&__visible
+				display: none
+	&__hidden
+		display: none

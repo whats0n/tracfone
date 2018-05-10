@@ -1,0 +1,35 @@
+.grid
+	margin-bottom: 30px
+	&__row
+		font-size: 0
+		+md 
+			padding: 10px
+			border: 1px solid lighten($darkGray, 60%)
+			border-radius: 3px
+			background: $lightGray
+	&__col
+		display: inline-block
+		vertical-align: top
+		width: 25%
+		+f(16px, null, 1.25)
+		+md 
+			padding: 5px
+			width: 50%
+		+xs
+			width: 100%
+	&__label
+		padding: 0 10px 15px 0
+		border-bottom: 1px solid lighten($darkGray, 60%)
+		color: lighten($darkGray, 40%)
+		+md 
+			padding: 0
+			border: none
+	&__value
+		padding: 15px 10px 15px 0
+		+md 
+			padding: 0
+	&__label,
+	&__value
+		+xs
+			display: inline-block
+			vertical-align: top

@@ -1,0 +1,49 @@
+.action
+	font-size: 0
+	&__info
+		display: inline-block
+		vertical-align: top
+		padding-right: 20px
+		width: 25%
+		+f(16px, null, 1.25)
+		+md 
+			padding: 5px
+			width: 100%
+		+xs
+			width: 100%
+	&__label
+		color: lighten($darkGray, 40%)
+	&__value
+		padding-top: 5px
+	&__container
+		display: inline-block
+		vertical-align: top
+		width: 75%
+		+md 
+			padding: 10px 0 0
+			width: 100%
+	&__content
+		padding: 15px
+		border: 1px solid lighten($darkGray, 60%)
+		background: $lightGray
+		+f(16px, null, 1.25)
+		&-in
+			position: relative
+			overflow: hidden
+			max-height: 1.25*4em
+			&.is-active
+				padding-bottom: 20px
+				max-height: none
+	&__link-more
+		position: absolute
+		right: 0
+		bottom: 0
+		background: $lightGray
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: -29px
+			bottom: 0
+			width: 30px
+			background-image: linear-gradient(to left, $lightGray 0%, $lightGray 50%, rgba($lightGray, 0) 100%)
