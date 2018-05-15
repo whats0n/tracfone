@@ -1,0 +1,32 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% set modals = [
+		{
+			title: 'error',
+			id: 'error'
+		},
+		{
+			title: 'alert',
+			id: 'alert'
+		}
+	] %}
+	<div class="inner">
+		<ul>
+			{% for item in modals %}
+				<li>
+					<a href="#" data-modal-control="{{item.id}}">{{item.title}}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	{% for item in modals %}
+		{% include 'partials/modals/_' + item.id + '.html' %}
+	{% endfor %}
+
+{% endblock %}

@@ -3,3 +3,5 @@ ProjectTitle: tracfone
 PageList:
 - file: home.html
 - file: empty.html
+- file: modals.html
+- file: loader.html
