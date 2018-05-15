@@ -2,6 +2,12 @@
 <div class="modal" data-modal="alert">
 	<div class="modal__overlay" data-modal-close></div>
 	<div class="modal__container" data-modal-container>
+		<button class="modal__close" data-modal-close>
+			{{mixins.icon('close')}}
+		</button>
+		<div class="modal__header">
+			<div class="modal__title">Info: header</div>
+		</div>
 		<div class="modal__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe.</div>
 		<div class="modal__footer">
 			<button class="btn btn_red modal__btn" data-animation="ripple" data-modal-close>Cancel</button>
