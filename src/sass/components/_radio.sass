@@ -19,6 +19,9 @@
 				cursor: not-allowed
 			~ .radio__icon:before
 				background: lighten($darkGray, 40%)
+		&.is-error
+			~ .radio__icon 
+				border-color: $red
 	&__icon
 		position: absolute
 		top: 0
@@ -28,6 +31,7 @@
 		width: 1em
 		height: 1em
 		cursor: pointer
+		transition: opacity 0.3s, border-color 0.3s
 		&:before
 			content: ''
 			position: absolute

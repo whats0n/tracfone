@@ -4,7 +4,7 @@
 
 {% macro radio(props) %}
 	<label class="radio">
-		<input type="radio" name="{{props.name}}" class="radio__input">
+		<input type="radio" name="{{props.name}}" class="radio__input {{props.inputClassList}}">
 		<span class="radio__icon"></span>
 		{% if props.title %}<span class="radio__title">{{props.title}}</span>{% endif %}
 	</label>

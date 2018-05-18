@@ -56,6 +56,7 @@
         <ul>
           <li> <a href="#" data-modal-control="error">error</a> </li>
           <li> <a href="#" data-modal-control="alert">alert</a> </li>
+          <li> <a href="#" data-modal-control="select-store">select-store</a> </li>
         </ul>
       </div>
       <!-- begin modal -->
@@ -86,6 +87,35 @@
             <div class="modal__title">Info: header</div>
           </div>
           <div class="modal__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, saepe.</div>
+          <div class="modal__footer"> <button class="btn btn_red modal__btn" data-animation="ripple" data-modal-close>Cancel</button> <button class="btn btn_primary modal__btn" data-animation="ripple" data-modal-close>OK</button> </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="select-store">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__container" data-modal-container> <button class="modal__close" data-modal-close>
+			
+	<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+		</button>
+          <div class="modal__header">
+            <div class="modal__title">Please select store</div>
+          </div>
+          <div class="modal__body">
+            <div class="select"> <span class="select__arrow"></span> <select class="select__field is-error">
+					
+						<option value="Store 1">Store 1</option>
+					
+						<option value="Store 2">Store 2</option>
+					
+						<option value="Store 3">Store 3</option>
+					
+						<option value="Store 4">Store 4</option>
+					
+				</select> </div>
+            <div class="error-message is-visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, itaque!</div>
+          </div>
           <div class="modal__footer"> <button class="btn btn_red modal__btn" data-animation="ripple" data-modal-close>Cancel</button> <button class="btn btn_primary modal__btn" data-animation="ripple" data-modal-close>OK</button> </div>
         </div>
       </div>

@@ -6,14 +6,15 @@
 			<div class="form__container">
 				<ul class="form__list">
 					{% for item in [
-						{ name: 'result-radio', title: 'Call Completed' },
-						{ name: 'result-radio', title: 'Left Voice-Mail' },
-						{ name: 'result-radio', title: 'Voice mail is not available' },
-						{ name: 'result-radio', title: "Don't Call Me Request" }
+						{ name: 'result-radio', title: 'Call Completed', inputClassList: 'is-error' },
+						{ name: 'result-radio', title: 'Left Voice-Mail', inputClassList: 'is-error' },
+						{ name: 'result-radio', title: 'Voice mail is not available', inputClassList: 'is-error' },
+						{ name: 'result-radio', title: "Don't Call Me Request", inputClassList: 'is-error' }
 					] %}
 						<li class="form__item">{{mixins.radio(item)}}</li>
 					{% endfor %}
 				</ul>
+				<div class="error-message is-visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, eveniet.</div>
 			</div>
 		</div>
 		<div class="form__col">
