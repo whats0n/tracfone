@@ -15,6 +15,10 @@
     <!-- begin header -->
     <header class="header"> <button class="header__btn-nav" data-modal-control="modal-nav">
 		<span></span>
+	</button> <button class="header__btn-help" data-modal-control="modal-nav">
+		
+	<svg class="icon icon-question-option header__btn-help-icon"><use xlink:href="img/sprite.svg#icon-question-option"></use></svg>
+
 	</button>
       <div class="inner header__inner">
         <div class="header__content"> <img src="img/wireless-logo.svg" alt="Logo" class="header__logo">
@@ -29,7 +33,7 @@
       <div class="nav__overlay" data-modal-close></div>
       <div class="nav__inner" data-modal-container> <button class="nav__header" data-modal-close>
 			
-	<svg class="icon icon-angle-left"><use xlink:href="img/sprite.svg#icon-angle-left"></use></svg>
+	<svg class="icon icon-angle-left "><use xlink:href="img/sprite.svg#icon-angle-left"></use></svg>
 
 			<strong>Alpha Wireless</strong>
 			<span>Access Code: 12345</span>
@@ -42,7 +46,7 @@
           <ul class="nav__list">
             <li class="nav__item"> <a href="#" class="nav__link ">
 							<span class="nav__icon">
-	<svg class="icon icon-logout-mark"><use xlink:href="img/sprite.svg#icon-logout-mark"></use></svg>
+	<svg class="icon icon-logout-mark "><use xlink:href="img/sprite.svg#icon-logout-mark"></use></svg>
 </span>
 							<span class="nav__title">Logout</span>
 						</a> </li>
@@ -53,6 +57,13 @@
     <!-- end nav -->
     <div class="main">
       <div class="inner">
+        <div class="sm-info">
+          <div class="sm-info__content">
+            <div class="sm-info__label">Store:</div>
+            <div class="sm-info__value">Main Store</div>
+          </div>
+          <div class="sm-info__control"> <button class="btn btn_primary" data-animation="ripple">Change Store</button> </div>
+        </div>
         <!-- begin grid -->
         <div class="grid">
           <div class="grid__row">
@@ -140,6 +151,8 @@
 							<option value="Changed provider">Changed provider</option>
 						
 							<option value="Question/answer">Question/answer</option>
+						
+							<option value="No feedback collected / No answer">No feedback collected / No answer</option>
 						
 					</select> </div>
                 <div class="error-message is-visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, itaque!</div>

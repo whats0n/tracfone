@@ -43,11 +43,11 @@ const animation = (e, target) => {
   const height = target.offsetHeight;
   const size = width >= height ? width : height;
   const offset = target.getBoundingClientRect();
-  const pageX = e.type !== 'touchstart' ? e.pageX : e.touches[0].clientX;
-  const pageY = e.type !== 'touchstart' ? e.pageY : e.touches[0].clientY;
+  const pageX = e.type !== 'touchstart' ? e.clientX : e.touches[0].clientX;
+  const pageY = e.type !== 'touchstart' ? e.clientY : e.touches[0].clientY;
   const x = pageX - offset.left;
   const y = pageY - offset.top;
-    
+
   const circle = document.createElement('span');
     
   circle.classList.add('ripple-circle');

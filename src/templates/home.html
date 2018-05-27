@@ -6,6 +6,15 @@ title: Index page
 {% block content %}
 	
 	<div class="inner">
+		<div class="sm-info">
+			<div class="sm-info__content">
+				<div class="sm-info__label">Store:</div>
+				<div class="sm-info__value">Main Store</div>
+			</div>
+			<div class="sm-info__control">
+				<button class="btn btn_primary" data-animation="ripple">Change Store</button>
+			</div>
+		</div>
 		{% include 'partials/_grid.html' %}
 		{% include 'partials/_action.html' %}
 		{% include 'partials/_form.html' %}

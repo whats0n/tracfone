@@ -6,8 +6,6 @@
 	color: $white
 	background: $primary
 	+vertical
-	+md 
-		padding-right: 0
 	&__btn-nav
 		position: absolute
 		top: 0
@@ -48,7 +46,28 @@
 			&:before
 				top: 0
 			&:after
-				bottom: 0		
+				bottom: 0
+	&__btn-help
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 60px
+		color: $white
+		background: none
+		cursor: pointer
+		transition: background 0.25s, box-shadow 0.25s
+		right: 0
+		+vertical
+		+hover 
+			background: darken($primary, 10%)
+		&:active
+			background: darken($primary, 10%)
+			box-shadow: inset 2px 2px 6px rgba(0,0,0,.2)
+		&-icon
+			display: inline-block
+			vertical-align: middle
+			fill: currentColor
+			font-size: 30px
 	&__inner
 		display: inline-flex
 		vertical-align: middle
@@ -58,6 +77,8 @@
 		text-align: left
 		+sm 
 			flex-direction: column
+			padding-left: 5px
+			padding-right: 5px
 	&__logo,
 	&__title
 		display: inline-block
@@ -68,20 +89,18 @@
 		+md 
 			font-size: 16px
 		+xs 
-			font-size: 14px
+			font-size: 13px
 	&__logo
 		margin-right: 15px
 		width: 80px
 		+xs 
 			margin-right: 5px
-			width: 60px
+			width: 56px
 	&__meta
 		padding-left: 20px
 		opacity: 0.8
 		+f(16px, 400, 1.2)
 		+md 
-			font-size: 14px
-		+sm 
 			display: none
 	&__content
 		flex-grow: 1
