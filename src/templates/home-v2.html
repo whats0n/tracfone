@@ -1,0 +1,21 @@
+---
+title: Index page
+changeStore: true
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<div class="inner">
+		<div class="sm-info sm-info_simple">
+			<div class="sm-info__content">
+				<div class="sm-info__label">Store:</div>
+				<div class="sm-info__value">Main Store</div>
+			</div>
+		</div>
+		{% include 'partials/_grid.html' %}
+		{% include 'partials/_action.html' %}
+		{% include 'partials/_form.html' %}
+	</div>
+
+{% endblock %}

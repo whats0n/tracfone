@@ -2,6 +2,7 @@ ProjectTitle: tracfone
 
 PageList:
 - file: home.html
+- file: home-v2.html
 - file: empty.html
 - file: modals.html
 - file: loader.html

@@ -13,7 +13,16 @@
 				<div class="user-data__subtitle">john123</div>
 			</div>
 			<ul class="nav__list">
+				{% if changeStore %}
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							<span class="nav__icon">{{mixins.icon('change')}}</span>
+							<span class="nav__title">Change Store</span>
+						</a>
+					</li>
+				{% endif %}
 				{% for item in [
+					{ icon: 'question-option', title: 'Help' },
 					{ icon: 'logout-mark', title: 'Logout' }
 				] %}
 					<li class="nav__item">
